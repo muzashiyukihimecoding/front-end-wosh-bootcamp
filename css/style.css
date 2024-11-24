@@ -1,0 +1,89 @@
+/* Variable */
+:root {
+   --fa-white: #fafafa;
+   --colour-blue: #4a69e2;
+   --colour-body: #e7e7e3;
+   --colour-text: #232321;
+}
+
+/* Main Style */
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   font-family: "Rubik", Poppins, Montserrat, Segoe UI;
+}
+
+body {
+   background-color: var(--colour-body);
+}
+
+nav {
+   width: 90%;
+   margin: 40px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px;
+   background-color: var(--fa-white);
+   border-radius: 24px;
+   position: relative;
+}
+
+/* Navbar */
+.upperTray-left {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
+
+.upperTray-left li a {
+   color: var(--colour-text);
+}
+
+.brand-logo {
+   width: 128px;
+   height: 40px;
+   align-items: center;
+}
+
+.upperTray-right {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
+
+.upperTray-right li a img {
+   width: 22px;
+   height: 22px;
+}
+
+/* Body - Brand Text - Catalogues */
+.huge-font {
+   display: flex;
+   justify-content: center;
+   font-size: larger;
+}
+
+/* secret source code >>
+/* Auto layout 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
+/* Yellow 
+background: #FFA52F;
+border-radius: 32px;
+
+/* Inside auto layout
+flex: none;
+order: 2;
+flex-grow: 0;
+*/
