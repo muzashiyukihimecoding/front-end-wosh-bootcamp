@@ -1,9 +1,9 @@
 /* Variable */
 :root {
-   --fa-white: #fafafa;
-   --colour-blue: #4a69e2;
-   --colour-body: #e7e7e3;
-   --colour-text: #232321;
+   --alpha-white: #fafafa;
+   --beta-white: #e7e7e3;
+   --alpha-blue: #4a69e2;
+   --alpha-grey: #232321;
 }
 
 /* Main Style */
@@ -16,7 +16,7 @@
 }
 
 body {
-   background-color: var(--colour-body);
+   background-color: var(--beta-white);
 }
 
 nav {
@@ -26,7 +26,7 @@ nav {
    justify-content: space-between;
    align-items: center;
    padding: 40px;
-   background-color: var(--fa-white);
+   background-color: var(--alpha-white);
    border-radius: 24px;
    position: relative;
 }
@@ -36,6 +36,7 @@ nav {
    display: flex;
    gap: 40px;
    align-items: center;
+   text-align: center;
 }
 
 .upperTray-left li a {
@@ -59,13 +60,66 @@ nav {
    height: 22px;
 }
 
-/* Body - Brand Text - Catalogues */
+/* Body - Brand Text */
 .huge-font {
-   display: flex;
    justify-content: center;
-   font-size: larger;
+   text-align: center;
+   font-size: 100px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 265px;
+   text-transform: uppercase;
+   color: #232321;
+   flex: none;
+   flex-grow: 0;
+   order: 0;
+   gap: 32px;
+   margin: 25px;
 }
 
+#right {
+   color: #4a69e2;
+   flex-direction: column;
+}
+
+/* Body -  Main Catalogue */
+.main-catalogue {
+   background-image: url(/coding-wosh/assets/brown-kicks-1.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   flex: none;
+   flex-grow: 0;
+   gap: 32px;
+   margin: 40px;
+   width: 1320px;
+   height: 750px;
+   order: 1;
+}
+
+.inner-main-catalogue {
+   display: flex;
+   flex-direction: column;
+   text-align: unset;
+}
+
+/* Media Screen Query */
+@media only screen and (max-width: 688px) {
+   nav {
+      flex-direction: row;
+   }
+
+   .upperTray-left li a {
+      flex-direction: row;
+      width: 100%;
+      text-align: center;
+   }
+
+   .upperTray-left {
+      flex-direction: row;
+      width: 100%;
+      text-align: center;
+   }
+}
 /* secret source code >>
 /* Auto layout 
 display: flex;
