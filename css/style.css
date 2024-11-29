@@ -12,7 +12,7 @@
    padding: 0;
    text-decoration: none;
    list-style-type: none;
-   font-family: "Rubik", Poppins, Montserrat, Segoe UI;
+   font-family: "Rubik", Poppins, Montserrat, Segoe UI, "Parkinsans;
 }
 
 body {
@@ -118,6 +118,8 @@ nav {
       text-align: center;
    }
 }
+
+
 /* secret source code >>
 /* Auto layout 
 display: flex;
@@ -139,3 +141,5 @@ flex: none;
 order: 2;
 flex-grow: 0;
 */
+
+/* ariz billah source code copify*/
