@@ -6,13 +6,18 @@
    --alpha-grey: #232321;
 }
 
+/* Notes
+   Relative sama saja dengan maju 1 layer. Jadi jika kamu menggunakan style relative, maka objek yang kamu buat akan menjadi layer baru di atas objek-objek yang lainnya. Dan kamu juga bisa mengakses tag *top; *left; *right; *bottom; . 
+   
+   Jika kamu ingin mempelajari beberapa hal baru dari Front-End, kamu dapa bergabung ke Discord saya untuk pengalaman yang lebih baik */
+
 /* Main Style */
 * {
    margin: 0;
    padding: 0;
    text-decoration: none;
    list-style-type: none;
-   font-family: "Rubik", Poppins, Montserrat, Segoe UI, "Parkinsans;
+   font-family: "Rubik", Poppins, Montserrat, Segoe UI;
 }
 
 body {
@@ -68,19 +73,9 @@ nav {
 
 /* Body - Brand Text */
 .huge-font {
-   justify-content: center;
-   text-align: center;
-   font-size: 80px;
-   font-style: normal;
+   font-size: 100px;
    font-weight: 700;
-   line-height: 265px;
-   text-transform: uppercase;
-   color: #232321;
-   flex: none;
-   flex-grow: 0;
-   order: 0;
-   gap: 32px;
-   margin: 25px;
+   text-align: center;
 }
 
 #right {
@@ -90,14 +85,33 @@ nav {
 
 /* Body -  Main Catalogue */
 .main-catalogue {
-   gap: 32px;
+   width: 90%;
    margin: 40px;
    padding: 50px;
+   gap: 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   padding-top: 0;
+   margin-top: 0;
 }
 
 .inner-main-catalogue {
+   margin: 50px;
    display: flex;
    flex-direction: column;
+   position: absolute;
+   color: var(--beta-white);
+}
+
+.rotated-label {
+   background-color: var(--alpha-grey);
+   color: var(--alpha-white);
+}
+
+.inner-main-catalogue > div {
+   font-size: 36px;
 }
 
 /* Media Screen Query */
@@ -118,7 +132,6 @@ nav {
       text-align: center;
    }
 }
-
 
 /* secret source code >>
 /* Auto layout 
@@ -141,5 +154,3 @@ flex: none;
 order: 2;
 flex-grow: 0;
 */
-
-/* ariz billah source code copify*/
