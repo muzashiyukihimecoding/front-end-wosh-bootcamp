@@ -4,10 +4,7 @@
    --beta-white: #e7e7e3;
    --alpha-blue: #4a69e2;
    --alpha-grey: #232321;
-   --alpha-yellow: #ffa52f;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Notes
    Relative sama saja dengan maju 1 layer. Jadi jika kamu menggunakan style relative, maka objek yang kamu buat akan menjadi layer baru di atas objek-objek yang lainnya. Dan kamu juga bisa mengakses tag *top; *left; *right; *bottom; . 
@@ -100,72 +97,53 @@ nav {
    position: relative;
 }
 
+.inner-main-catalogue {
+   margin: 50px;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   color: var(--beta-white);
+}
+
 .rotated-label {
    background-color: #232321;
    color: var(--alpha-white);
+   padding: 24px;
    font-size: 16px;
    font-weight: 500;
    position: absolute;
-   padding: 24px;
    rotate: -90deg;
-   /* gap: 10px; */
-   left: -89px;
-   top: 172px;
+   left: -138px;
+   top: 150px;
    border-radius: 0 0 16px 16px;
 }
 
-.inner-cat-content {
-   padding: 64px;
+.catalogue-desc {
    display: flex;
-   justify-content: space-between;
-   color: var(--alpha-white);
    align-items: end;
    position: relative;
-   /* bottom: 0px; */
-   top: 285px;
-   gap: 16px;
+   width: 90%;
+   top: 275px;
 }
 
-.inner-cat-text {
-   position: relative;
-   bottom: 16px;
-}
-.inner-cat-content h1 {
-   font-size: 64px;
+.catalogue-desc h1 {
+   font-size: 56px;
 }
 
-.inner-cat-content p {
-   font-size: 26px;
-   padding-bottom: 36px;
-   display: flex;
-   flex-direction: column;
+.catalogue-desc p {
+   font-size: 24px;
 }
-
-#shop-desc {
-   background-color: var(--alpha-blue);
+.catalogue-desc a {
    color: var(--alpha-white);
-   padding: 16px 32px;
-   /* margin: 24px; */
-   /* width: 90%; */
-   border-radius: 12px;
+   background-color: #4a69e2;
 }
 
-.right-img {
+.right-box {
    display: flex;
    flex-direction: column;
-   gap: 16px;
 }
 
-.right-img img {
-   border-radius: 32px;
-}
-
-.products-content {
-   margin: 0 auto 90px;
-   gap: 32px;
-}
-
-/* Media Screen - Display Responsive */
+/* Media Screen Query */
 @media only screen and (max-width: 688px) {
    nav {
       flex-direction: row;
