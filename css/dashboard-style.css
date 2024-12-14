@@ -1,0 +1,257 @@
+/* Variable */
+:root {
+   --alpha-white: #fafafa;
+   --beta-white: #f6f6f6;
+   --gamma-white: #eceef0;
+   --alpha-blue: #4a69e2;
+   --alpha-yellow: #ffa52f;
+   --alpha-grey: #232321;
+   --beta-grey: #707e6e;
+}
+
+/* Notes
+   Relative sama saja dengan maju 1 layer. Jadi jika kamu menggunakan style relative, maka objek yang kamu buat akan menjadi layer baru di atas objek-objek yang lainnya. Dan kamu juga bisa mengakses tag *top; *left; *right; *bottom; . 
+   
+   Jika kamu ingin mempelajari beberapa hal baru dari Front-End, kamu dapa bergabung ke Discord saya untuk pengalaman yang lebih baik */
+
+/* Main Style - HTML and Body - alles */
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   font-family: "Rubik", Poppins, Montserrat, Segoe UI;
+}
+
+body {
+   background-color: var(--beta-white);
+}
+
+/* Navbar */
+nav {
+   width: 90%;
+   margin: 40px auto;
+   padding: 40px;
+   gap: 32px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--alpha-white);
+   border-radius: 24px;
+   position: relative;
+}
+
+.upperTray-left {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   text-align: center;
+}
+
+.upperTray-left li a {
+   color: var(--colour-text);
+}
+
+.brand-logo {
+   width: 128px;
+   height: 40px;
+   align-items: center;
+}
+
+.upperTray-right {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
+
+#ngga-tau-apaan {
+   width: 40px;
+   height: 40px;
+}
+
+#turnDarkMode {
+   width: 36px;
+   /* padding: 2px; */
+   border: 1px solid black;
+   border-radius: 18px;
+   background-color: var(--alpha-white);
+}
+
+#turnDarkMode div {
+   width: 4px;
+   margin: 4px;
+   padding: 4px;
+   border: 1px solid black;
+   border-radius: 36px;
+   align-items: left;
+   background-color: #232321;
+}
+
+.upperTray-right li a img {
+   width: 22px;
+   height: 22px;
+}
+
+/* Body - Brand Text */
+.huge-font {
+   font-size: 100px;
+   font-weight: 700;
+   text-align: center;
+}
+
+#right {
+   color: #4a69e2;
+   flex-direction: column;
+}
+
+/* Body -  Nike Air Max Catalogue */
+.main-catalogue {
+   width: 90%;
+   margin: 0 auto 36px;
+   /* background-image: url(/coding-wosh/assets/brown-kicks-1.png); */
+   background-image: url(/assets/brown-kicks-1.png);
+   min-height: 750px;
+   background-size: cover;
+   background-position: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   position: relative;
+}
+
+.rotated-label {
+   background-color: #232321;
+   color: var(--alpha-white);
+   padding: 24px;
+   font-size: 16px;
+   font-weight: 500;
+   position: absolute;
+   rotate: -90deg;
+   left: -88px;
+   top: 150px;
+   border-radius: 0 0 16px 16px;
+}
+
+.inner-cat-content {
+   width: 90%;
+   padding: 56px;
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   position: relative;
+   top: 304px;
+}
+
+.inner-cat-text {
+   color: var(--alpha-white);
+   font-size: 36px;
+   margin-bottom: 18px;
+}
+
+.inner-cat-text p {
+   display: flex;
+   flex-direction: column;
+   font-size: 26px;
+   margin-bottom: 24px;
+}
+
+.inner-cat-text a {
+   font-size: 14px;
+   color: var(--alpha-white);
+   background-color: var(--alpha-blue);
+   padding: 20px 42px;
+   border-radius: 16px;
+}
+
+.right-img {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+}
+
+.right-img img {
+   border-radius: 30px;
+}
+
+/* Media Screen Responsives */
+@media only screen and (max-width: 688px) {
+   .upperTray-left {
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 12px;
+      /* background-image: url(/assets/burger-bar.png); */
+   }
+
+   .upperTray-right {
+      /* display: flex; */
+      flex-direction: column;
+      gap: 12px;
+   }
+}
+
+/* Content Values -> Flexbox  */
+.products-content {
+   margin: 0 auto 24px;
+   width: 90%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* text-align: end; */
+}
+
+.top-product-text {
+   display: flex;
+   flex-direction: column;
+   font-size: 48px;
+   font-weight: 550;
+}
+
+.products-content a {
+   align-self: end;
+   font-size: 14px;
+   color: var(--alpha-white);
+   background-color: var(--alpha-blue);
+   padding: 18px 36px;
+   border-radius: 12px;
+}
+
+.adidas-drops {
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: space-between;
+   margin: 0 auto 32px;
+   gap: 14px;
+   width: 90%;
+}
+
+.adidas-drops div {
+   background-color: var(--alpha-white);
+   padding: 20px;
+   border-radius: 22px;
+   /* gap: 100; */
+}
+
+.adidas-drops h2 {
+   font-size: 22px;
+   margin-top: 6px;
+}
+
+.view-product {
+   text-align: center;
+   font-size: 16px;
+   /* font-weight: 200; */
+   color: var(--alpha-white);
+   background-color: var(--alpha-blue);
+   padding: 12px;
+   margin-top: 16px;
+   border-radius: 12px;
+}
+
+@media only screen and (max-width: 1440px) {
+   .adidas-drops {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+   }
+}
