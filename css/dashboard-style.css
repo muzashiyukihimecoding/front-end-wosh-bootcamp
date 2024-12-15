@@ -177,15 +177,15 @@ nav {
 @media only screen and (max-width: 688px) {
    .upperTray-left {
       /* display: flex; */
-      flex-direction: column;
-      justify-content: space-around;
+      /* flex-direction: column; */
+      /* justify-content: space-around; */
       gap: 12px;
       /* background-image: url(/assets/burger-bar.png); */
    }
 
    .upperTray-right {
       /* display: flex; */
-      flex-direction: column;
+      /* flex-direction: column; */
       gap: 12px;
    }
 }
